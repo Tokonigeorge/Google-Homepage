@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: black;
+    font-size: 13px;
+}
+
+nav a+a{
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+nav > ul li{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li img{
+    cursor: pointer;
+    color: grey;
+}
+
+nav > ul > li:first-of-type{
+    margin-left: 1.5em;
+    padding: 0.4em 0.5em 0.3em 0.5em;
+}
+
+nav > ul > li:first-of-type:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-radius: 50%;
+}
+
+nav > ul > li:last-of-type{
+   background-color: purple;
+   padding: 0.35em 0.7em 0.4em 0.7em;
+   border-radius: 50%;
+   margin: 1em;
+}
+
+nav > ul > li > p{
+    font-size: 1.1em;
+    color: white;
+}
+
+main > div:first-of-type > img{
+    width: 20%;
+}
+
+main > div:first-of-type{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+main > div:nth-of-type(2){
+  border: 1px solid #d3d3d3;
+  min-width: 300px;
+  width: 47%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 0.4em 1em;
+}
+
+main > div > input{
+    width: 92%;
+    height: 30px;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+}
+
+main > div:nth-of-type(2):hover{
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+main > div:nth-of-type(3){
+   text-align: center;
+   margin: 4vh 0;
+}
+
+main > div button{
+  padding: 0.7em 1em;
+  margin: 0 1em;
+  outline: 0;
+  background: rgba(100, 100, 100, 0.1);
+  border: 1px solid transparent;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+
+main > div button:hover{
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+main > div:last-of-type{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+main > div:last-of-type a{
+    margin: 0.6em;
+    color: blue;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(100, 100, 100, 0.2);
+    width: 100vw;
+}
+
+footer > div:first-of-type{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+footer > div:last-of-type{
+    display: flex;
+    align-items: center;
+    padding:1em 0.9em;
+    font-size: 0.9em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > div > ul{
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+footer > div > ul:first-of-type{
+    justify-content: flex-start;
+    margin-right: 1em;
+}
+
+footer > div > ul li{
+    margin:0 1em;
+}
+
+footer > div:last-of-type > p{
+ text-align: center;
+}
+
+footer a{
+    color: grey;
+}
